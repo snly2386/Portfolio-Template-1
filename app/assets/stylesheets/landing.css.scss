@@ -1,0 +1,199 @@
+// Place all the styles related to the landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.landing{
+	.navbar{
+		background-color: #1f1f1f;
+		position: absolute;
+		width: 300px;
+		left:0px;
+		top:0px;
+		.navbar-content{
+			width: 100%;
+			.name{
+				margin-top: 200px;
+				i{font-size: 2em;}
+				text-align: center;
+				color: #fff;
+				h3{ font-size: 0.6em;}
+			}
+			.work{
+				letter-spacing: 5px;
+				margin-top: 50px;
+				text-align: center;
+				color: #fff;
+				p{cursor: pointer; 	-webkit-transition: all 1s;
+				transition: all 1s; }
+			}
+			.work p:hover{
+				color: #3BF9C6;
+			}
+		}
+	}
+	.social-media{
+		position: absolute;
+		width: 300px;
+		left: 0px;
+		bottom: 50px;
+		.social-content{
+			width: 80px;
+			i{ font-size: 1em; float: left; margin-left: 10px; color: #fff }
+		}
+	}
+	.portfolio{
+		background-color: #fff;
+		z-index: -2;
+		position: absolute;
+		left: 300px;
+		top:0;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space:nowrap;
+		.placeholder{
+			position: relative;
+			z-index: 100;
+			border: 5px solid pink;
+			width: 300px;
+			opacity: 1;
+			height: 300px;
+			display: inline-block;
+		}
+		.project{
+			cursor: pointer;
+			margin-right: -4px;
+			display: inline-block;
+			background-size: 250% 100%;
+			background-repeat: no-repeat;
+			background-position: right;
+			position: relative;
+			width: 180px;
+			.title{
+				text-align: center;
+				background-color: #fff;
+				position: absolute;
+				bottom: 100px;
+				width: 140px;
+				left: 20px;
+				-webkit-transition: all 1s;
+				transition: all 1s;
+				.line{
+					margin-top: -25px;
+				}
+			}
+		}
+		.p-1{
+			background-image: url('b_1.jpg');	
+		}
+		.p-2{
+			background-image: url('b_2.jpg')
+		}
+		.p-3{
+			background-image: url('b_3.jpg')
+		}
+		.p-4{
+			background-image: url('b_4.jpg')
+		}
+		.p-5{
+			background-image: url('b_5.jpg')
+		}
+		.p-6{
+			background-image: url('b_6.jpg')
+		}
+		.p-7{
+			background-image: url('b_7.jpg')
+		}
+		.p-8{
+			background-image: url('b_8.jpg')
+		}
+		.p-9{
+			background-image: url('b_10.jpg')
+		}
+		.p-10{
+			background-image: url('b_12.jpg')
+		}
+		.p-11{
+			background-image: url('b_13.jpg')
+		}
+		.p-12{
+			background-image: url('b_14.jpg')
+		}
+		.p-13{
+			background-image: url('b_15.jpg')
+		}
+		.p-14{
+			background-image: url('b_16.jpg')
+		}
+		.p-15{
+			background-image: url('b_17.jpg')
+		}
+	}
+	.proj-class{
+		display: none;
+		overflow-y: scroll;
+		background-color: #fff;
+		position: absolute;
+		left: 300px;
+		i{ cursor: pointer; right: 5px; top: 5px; font-size: 1.5em; margin-right: 10px; position: fixed; z-index: 100;}
+		.image{
+			// display: none;
+			margin-top: 50px;
+			width: 1000px;
+			img{ width: 100%}
+		}
+		.subtitle{
+			margin: 0 auto;
+			width: 500px;
+			// display: none;
+			text-align: center;
+			font-size: 2em;
+		}
+		.project-text{
+			// display: none;
+			color: gray;
+			width: 500px;
+			text-align: center;
+		}
+		.image-collection{
+			margin-top: 40px;
+			width: 1000px;
+			.row-1{
+				width: 100%;
+				img { width: 100%; }
+			}
+			.row-2{
+				height: 300px;
+				margin-top: 10px;
+				width: 100%;
+				img { width: 495px; float: left; height: 300px; }
+				img:nth-child(1){ margin-right: 10px;}
+			}
+			.row-3{
+				margin-top: 10px;
+				width: 100%;
+				height: 300px;
+				img { width: 495px; float: left; height: 300px; }
+				img:nth-child(1){ margin-right: 10px;}
+			}
+			.row-4{
+				padding-bottom: 20px;
+				margin-top: 10px;
+				width: 100%;
+				img { width: 100%; }
+			}
+		}
+	}
+	@media screen and (max-width:1350px){
+		.image{
+			width: 700px !important;
+		}
+		.image-collection{
+			width: 700px !important;
+			.row-2{
+				img { width: 345px !important;}
+			}
+			.row-3{
+				img { width: 345px !important;}
+			}
+		}
+	}
+}
